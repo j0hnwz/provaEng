@@ -2,6 +2,7 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <time.h>
 
 #define N 10
 
@@ -11,6 +12,8 @@ int main()
 {
     int vetor[N];
     int i;
+
+    srand(time(0));
 
     for (i = 0; i < N; i++)
         vetor[i] = rand() % 100;
