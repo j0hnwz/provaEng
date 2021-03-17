@@ -1,13 +1,19 @@
-## Compiled source ##
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
 *.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
 
-### VisualStudioCode ###
+### vscode ###
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-
-### VisualStudioCode Patch ###
-# Ignore all local history of files
-**/.history
+*.code-workspace
