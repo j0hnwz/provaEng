@@ -29,16 +29,16 @@ int main()
 
 int acheMaximo(int vetor[], int inicio, int fim)
 {
-    int max = 0;
+    int esquerda, direita, meio, max = 0;
 
     if (fim - inicio == 1)
     {
         return vetor[inicio];
     }
 
-    int meio = (inicio + fim) / 2;
-    int esquerda = acheMaximo(vetor, inicio, meio);
-    int direita = acheMaximo(vetor, meio, fim);
+    meio = (inicio + fim) / 2;
+    esquerda = acheMaximo(vetor, inicio, meio);
+    direita = acheMaximo(vetor, meio, fim);
 
     if (esquerda > direita)
     {
