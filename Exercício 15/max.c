@@ -34,12 +34,12 @@ int acheMaximo(int vetor[], int tam)
 {
     int max = 0;
 
-    if ( tam == 1)
+    if (tam == 1)
     {
         return vetor[tam - 1];
     }
 
     max = acheMaximo(vetor, tam - 1);
 
-    return (vetor[tam-1] > max) ? vetor[tam-1] : max;
+    return (vetor[tam - 1] > max) ? vetor[tam - 1] : max;
 }
